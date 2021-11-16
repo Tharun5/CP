@@ -4,7 +4,7 @@
  * Time: O(n)
 */
 
-const int N = 10000000;
+const int N = 1e7;
 vector<int> spf(N+1); //stores smallest prime factor of a number
 vector<int> prm; //contains list of primes
 
