@@ -21,3 +21,8 @@ void linearSieve(){
 }
 
 //To check if number is prime, Its spf should equal to number itself
+
+/**
+ * Related Sources:
+ * Divisors Sieve: https://codeforces.com/blog/entry/22229#introducing-a-problem
+*/
