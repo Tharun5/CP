@@ -16,7 +16,7 @@ void solve(){
     cin>>b>>c;
     ld l,r;
     l=0,r=PI/2.0;
-    while(r-l > N){
+    while(r-l > N){  //Instead of while can run for 100-150 iterations
         ld m1=l+(r-l)/3;
         ld m2=r-(r-l)/3;
         if(f(m1)>f(m2))l=m1;
