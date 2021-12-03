@@ -19,12 +19,10 @@ void solve(){
     while(r-l > N){  //Instead of while can run for 100-150 iterations
         ld m1=l+(r-l)/3;
         ld m2=r-(r-l)/3;
-        if(f(m1)>f(m2))l=m1;
-        else if(f(m1)<f(m2))r=m2;
-        else{
+        if(f(m1)>f(m2))
             l=m1;
+        else
             r=m2;
-        }
     }
     cout << fixed << setprecision(15) << f(l) << endl;
 }
