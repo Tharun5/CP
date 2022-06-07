@@ -2,7 +2,6 @@
  * Description: Given an array and sum, determine if there is a subset of the given array elements with sum equal to given sum.
  * Source: https://www.youtube.com/watch?v=_gPcYovP7wc&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=7
            https://www.geeksforgeeks.org/subset-sum-problem-dp-25/
- * Time: O(n)
 */
 
 // Recursive with memoisation
