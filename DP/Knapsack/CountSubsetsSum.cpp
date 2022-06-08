@@ -8,7 +8,7 @@
 // Variation of SubsetSum problem (change in return type)
 int dp[2002][2002];
 
-int subsetsum(int arr[],int sum,int n){
+int cntsubsetsum(int arr[],int sum,int n){
     //Initialisation
     for(int i=0;i<sum+1;i++)
         dp[0][i]=0;
@@ -36,5 +36,5 @@ void solve(){
         cin>>arr[i];
     }
     memset(dp,-1,sizeof(dp));
-    cout<<subsetsum(arr,sum,n);
+    cout<<cntsubsetsum(arr,sum,n);
 }
