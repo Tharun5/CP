@@ -3,8 +3,8 @@
                 Return the number of combinations that make up that amount.
                 If that amount of money cannot be made up by any combination of the coins, return 0.
                 
- * Source: https://www.youtube.com/watch?v=F7wqWbqYn9g&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=9 
-           https://www.codingninjas.com/codestudio/problems/number-of-subsets_3952532
+ * Source: https://www.youtube.com/watch?v=I4UR2T6Ro3w&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=15
+           https://leetcode.com/problems/coin-change-2/
 */
 
 // Similar to Cnt no of Subset sum but this is Unbounded Knapsack variant
