@@ -116,6 +116,20 @@ void bfs(int i,int j){
     }
 }
 
+
+
+//---------------------------------------------------------------------------------------------
+
+//MultiSoucre BFS
+/* Same Like grid BFS but if we want to BFS on various soucres in grid, 
+   Take a root and assume like root has all edges as soucres to which we want BFS.
+   So push all soucres in queue and do One BFS for whole
+   Then node dist-1 will be their distance
+   
+   Refer(first 30 mins): https://unacademy.com/class/graph-theory-lecture-2/4GHKRNKV
+   
+*/
+
 //---------------------------------------------------------------------------------------------
 
 // Find Bridges in Graph
