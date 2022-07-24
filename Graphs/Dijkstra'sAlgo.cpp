@@ -1,4 +1,5 @@
 //Refer:https://unacademy.com/class/graph-theory-lecture-2/4GHKRNKV
+// Time: O(mlogn) m-edges, logn from set
 
 vector<pair<int,int>> grp[10001];
 int dist[10001];
