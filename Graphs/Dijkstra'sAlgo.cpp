@@ -1,5 +1,5 @@
 //Refer:https://unacademy.com/class/graph-theory-lecture-2/4GHKRNKV
-// Time: O(mlogn) m-edges, logn from set
+// Time: O(mlogn) m-edges, logn from set (BFS takes O(n+m) so dijkstras takes O(nlogn+mlogn) as edges > no. of nodes we take as mlogn)
 
 vector<pair<int,int>> grp[10001];
 int dist[10001];
