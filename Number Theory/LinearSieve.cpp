@@ -26,6 +26,14 @@ void seive(){
     }
 }
 
+// For Factorization of number
+void primefact(int n){
+    while(n>1){
+        cout<<spf[n]<<" ";
+        n=n/spf[n];
+    }
+}
+
 //To check if number is prime, Its spf should equal to number itself
 
 /**
