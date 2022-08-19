@@ -5,17 +5,23 @@
 */
 
 const int N = 1e7;
-vector<int> spf(N+1); //stores smallest prime factor of a number
-vector<int> prm; //contains list of primes
+int spf[N];
+vector<int> primes;
 
-void linearSieve(){
-    for (int i=2; i <= N; ++i) {
-        if (spf[i] == 0) {
-            spf[i] = i;
-            prm.push_back(i);
-        }   
-        for (int j=0; j < (int)prm.size() && prm[j] <= spf[i] && i*prm[j] <= N; ++j) {
-            spf[i * prm[j]] = prm[j];
+void seive(){
+    for(int i=0;i<N;i++){
+        spf[i]=i;
+    }
+
+    for(int i=2;i*i<N;i++){
+        if(spf[i]==i){
+            primes.pb(i);
+        
+            for(int j=i*i;j<N;j+=i){
+                if(spf[j]==j)
+                    spf[j]=i;
+            }
+
         }
     }
 }
