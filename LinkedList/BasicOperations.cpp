@@ -1,3 +1,17 @@
+class Node{
+public:
+    int data;
+    Node* next;
+    
+    Node(int val){
+        data = val;
+        next = NULL;
+    }
+    
+};
+
+
+
 struct Node{
     int data;
     Node *next;
@@ -6,6 +20,8 @@ struct Node{
         next=NULL;
     }
 };
+
+--------------------------------------
 
 void printList(Node *head){
     Node *curr=head;
