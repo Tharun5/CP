@@ -2,7 +2,7 @@
 
 ### References-
 Youtube CodeStoryWithMIK: [Concepts and Problems](https://www.youtube.com/watch?v=iH3XVIVzl7M&list=PLpIkg8OmuX-LZB9jYzbbZchk277H5CbdY&index=19&pp=iAQB)
-
+<br>
 ### Intro:
 - Two sets are called disjoint sets if they don’t have any element in common. The disjoint set data structure is used to store such sets.
 
@@ -10,6 +10,7 @@ It supports following operations:
 1. Merging two disjoint sets to a single set using **Union** operation.
 2. Finding representative of a disjoint set using **Find** operation.
 3. Check if two elements belong to same set or not. We mainly find representative of both and check if same.
+<br>   
 
 ```cadence
 class DisjointSet{
