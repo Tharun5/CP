@@ -44,6 +44,10 @@ void solve(){
 
 
 /*
++ When I am visiting a node from set in algo for sure there will not be any less dist apart from what it has.
++ Means if node is processed from set, there is no shortest path for this node apart from what dist it has
++ Bcoz, if it is available then that will be visited first
+
 + Why Dijkstra's Algo wont work for neg weights
    -2
 0 -----1
