@@ -40,3 +40,15 @@ void solve(){
     for(int i=1;i<=n;i++)
         cout<<dist[i]<<" ";
 }
+
+
+
+/*
++ Why Dijkstra's Algo wont work for neg weights
+   -2
+0 -----1
+
+Here it goes inf loop, as we dont maintain visited array in algo
+every time the dis will be less than previous as these are neg values.
+
+*/
