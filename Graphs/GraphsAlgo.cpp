@@ -53,6 +53,39 @@ void bfs(int source){
         }
     }
 }
+/*
+BFS Time Complexity: O(V + E)
+1️⃣ Understanding the BFS Code Structure
+
+while (!q.empty()) {           // Runs O(V) times (once per node)
+    int node = q.front();
+    q.pop();
+    
+    for (int neighbor : adj[node]) {  // Iterates over neighbors (edges)
+        if (!visited[neighbor]) {
+            q.push(neighbor);
+            visited[neighbor] = true;
+        }
+    }
+}
+
+2️⃣ Why BFS is NOT O(V * E)?
+The outer loop (while) runs O(V) times (each node dequeued once).
+The inner loop (for neighbors) does NOT iterate over all E edges for every node.
+Instead, across all nodes, we iterate only once per edge → O(E) total.
+
+3️⃣ Proof: Summing Up the Work
+Each edge appears once per endpoint in the adjacency list.
+The total number of inner loop iterations across all nodes is O(2E).
+Since we also perform enqueue & dequeue for V nodes, we add O(V).
+Thus it is addition.
+
+4️⃣ Final Complexity Derivation
+Processing nodes (enqueue/dequeue) → O(V)
+Processing edges (adjacency list traversal) → O(E)
+Total = O(V) + O(E) = O(V + E) ✅
+*/
+
 //--------------------------------------------------------------------------
 
 // Grid DFS
