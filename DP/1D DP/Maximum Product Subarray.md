@@ -2,6 +2,12 @@
 
 Problem - https://leetcode.com/problems/maximum-product-subarray/description/
 
+Idea:
+- Consider a subproblem of index i, need to find ans for subarray starts with i
+- Here we can directly depend on max product of i+1 and multiply with a[i] 
+- Bcoz if a[i] is -ve then max Product can go -ve, in this case with need to multiply with -ve product so far
+- Thus it depends on -ve and +ve value of a[i], we need to maintain both min and max products so far.
+
 ``` cadence
 class Solution {
 public:
