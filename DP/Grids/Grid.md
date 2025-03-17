@@ -13,6 +13,7 @@ It depends on the answers of its right and down. Thus it will be summation.
 
 Basic Problems:
 1. https://leetcode.com/problems/unique-paths/description/
+2. https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix/description/ (Tricky Handling) 
 
 
 
