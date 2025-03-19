@@ -51,6 +51,7 @@ https://www.naukri.com/code360/problems/subset-sum-equal-to-k_1550954
 https://leetcode.com/problems/partition-equal-subset-sum/description/
 https://www.naukri.com/code360/problems/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum_842494
 https://www.naukri.com/code360/problems/count-subsets-with-sum-k_3952532
+https://www.naukri.com/code360/problems/partitions-with-given-difference_3751628
 
 
 ## Meet In Middle Concept
