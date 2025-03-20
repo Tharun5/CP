@@ -51,3 +51,7 @@
 - Further you can space optimize to next and cur arrays
 - Upon further you only depend on the next and that too only left values when I am at i
 - So we can also store the cur in same next array to reduce further to single array optimise.
+
+## Problems:
+1. [Coin Change](https://leetcode.com/problems/coin-change/description/)
+
