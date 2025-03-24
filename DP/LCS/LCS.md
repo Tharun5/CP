@@ -72,7 +72,7 @@ Here state lcs(i,j) defines - length of lcs from (i,j) to (m,n)
 - Form the DP table using iterative the parse it based on the answers of each state
 
 ``` cadence
-string findLCS(int n, int m, string &s1, string &s2){
+    string findLCS(int n, int m, string &s1, string &s2){
 	vector<vector<int>> dp(n+1, vector<int>(m+1, 0));
 
 	for(int i=n-1;i>=0;i--){
@@ -102,5 +102,5 @@ string findLCS(int n, int m, string &s1, string &s2){
 	}
 	
 	return ans;
-}
+    }
 ```
