@@ -3,6 +3,8 @@
 
 
 ``` cadence
+Here state lcs(i,j) defines - length of lcs from i to m & j to n
+
 // Recursion + Memo
     int lcs(int i, int j, string &s1, string &s2, vector<vector<int>> &dp){
         if(i==s1.length() || j==s2.length()){
