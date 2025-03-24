@@ -104,3 +104,8 @@ Here state lcs(i,j) defines - length of lcs from (i,j) to (m,n)
 	return ans;
     }
 ```
+
+
+## Problems:
+1. [Longest Common Substring](https://www.naukri.com/code360/problems/longest-common-substring_1235207)
+2. [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/description/)
