@@ -94,9 +94,9 @@ Here state lcs(i,j) defines - length of lcs from (i,j) to (m,n)
 		i+=1;j+=1;
 	    }else{
 		if(dp[i][j]==dp[i+1][j]){
-			i+=1;
+		    i+=1;
 		}else{
-			j+=1;
+		    j+=1;
 		}
 	    }
 	}
