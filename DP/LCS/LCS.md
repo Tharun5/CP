@@ -109,3 +109,5 @@ Here state lcs(i,j) defines - length of lcs from (i,j) to (m,n)
 ## Problems:
 1. [Longest Common Substring](https://www.naukri.com/code360/problems/longest-common-substring_1235207)
 2. [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/description/)
+3. [Min Insertions to make String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/description/)
+4. [Delete Operations to make two Strings Same](https://leetcode.com/problems/delete-operation-for-two-strings/description/)
