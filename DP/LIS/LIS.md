@@ -1,5 +1,7 @@
 # Longest Increasing Subsequence
 
+Problem: https://leetcode.com/problems/longest-increasing-subsequence/description/
+
 ``` cadence
     int LIS(int i, int last, vector<int>& nums, vector<vector<int>> &dp){
         if(i==nums.size()){
@@ -66,37 +68,37 @@
 
 ### Printing LIS
 ``` cadence
-vector<int> printLIS(vector<int> nums, int n) {
-	vector<int> dp(n, 1);
-	vector<int> prev(n,-1);
-
-	int len = 1;
-	int idx;
-
-	for(int i=0;i<n;i++){
-		for(int j=0;j<i;j++){
-			if(nums[i]>nums[j]){
-				if(1+dp[j] > dp[i]){
-					dp[i] = 1+dp[j];
-					prev[i]=j;
+	vector<int> printLIS(vector<int> nums, int n) {
+		vector<int> dp(n, 1);
+		vector<int> prev(n,-1);
+	
+		int len = 1;
+		int idx;
+	
+		for(int i=0;i<n;i++){
+			for(int j=0;j<i;j++){
+				if(nums[i]>nums[j]){
+					if(1+dp[j] > dp[i]){
+						dp[i] = 1+dp[j];
+						prev[i]=j;
+					}
 				}
 			}
+			if(len<dp[i]){
+				len = dp[i];
+				idx = i;
+			}
+		} 
+	
+		vector<int> ans;
+		while(prev[idx]!=-1){
+			ans.push_back(nums[idx]);
+			idx = prev[idx];
 		}
-		if(len<dp[i]){
-			len = dp[i];
-			idx = i;
-		}
-	} 
-
-	vector<int> ans;
-	while(prev[idx]!=-1){
+	
 		ans.push_back(nums[idx]);
-		idx = prev[idx];
+		reverse(ans.begin(),ans.end());
+	
+		return ans;
 	}
-
-	ans.push_back(nums[idx]);
-	reverse(ans.begin(),ans.end());
-
-	return ans;
-}
 ```
