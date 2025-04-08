@@ -86,7 +86,7 @@ vector<int> printLIS(vector<int> nums, int n) {
 			len = dp[i];
 			idx = i;
 		}
-	}
+	} 
 
 	vector<int> ans;
 	while(prev[idx]!=-1){
