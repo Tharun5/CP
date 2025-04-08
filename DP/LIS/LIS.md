@@ -76,24 +76,24 @@ Problem: https://leetcode.com/problems/longest-increasing-subsequence/descriptio
 		int idx;
 	
 		for(int i=0;i<n;i++){
-			for(int j=0;j<i;j++){
-				if(nums[i]>nums[j]){
-					if(1+dp[j] > dp[i]){
-						dp[i] = 1+dp[j];
-						prev[i]=j;
-					}
-				}
+		    for(int j=0;j<i;j++){
+			if(nums[i]>nums[j]){
+			    if(1+dp[j] > dp[i]){
+				dp[i] = 1+dp[j];
+				prev[i]=j;
+			    }
 			}
-			if(len<dp[i]){
-				len = dp[i];
-				idx = i;
-			}
+		    }
+		    if(len<dp[i]){
+			len = dp[i];
+			idx = i;
+		    }
 		} 
 	
 		vector<int> ans;
 		while(prev[idx]!=-1){
-			ans.push_back(nums[idx]);
-			idx = prev[idx];
+		    ans.push_back(nums[idx]);
+		    idx = prev[idx];
 		}
 	
 		ans.push_back(nums[idx]);
