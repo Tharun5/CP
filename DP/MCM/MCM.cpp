@@ -10,21 +10,27 @@
 
 // Recursion
 
-int MCM(int arr[],int i,int j){
-    //Base Cond.
-    if(i>=j)
-        return 0;
+#include <bits/stdc++.h> 
 
-    int ans=INT_MAX;
+int MCM(int i, int j, vector<int>& arr, vector<vector<int>> &dp){
+    if(i==j) return 0;
 
-    //k range, which divides the array
-    for(int k=i;k<=j-1;k++){
-        int tmpans = MCM(arr,i,k) + MCM(arr,k+1,j) + (arr[i-1]*arr[k]*arr[j]);
-        ans=min(ans,tmpans);
+    if(dp[i][j]!=-1) return dp[i][j];
+
+    int ans = INT_MAX;
+
+    for(int k=i;k<j;k++){
+        ans = min(ans, MCM(i,k,arr, dp) + MCM(k+1,j,arr, dp) + arr[i-1]*arr[k]*arr[j]);
     }
-    return ans;
+
+    return dp[i][j] = ans;
 }
 
+int matrixMultiplication(vector<int> &arr, int N)
+{   
+    vector<vector<int>> dp(N, vector<int>(N, -1));
+    return MCM(1, N-1, arr, dp);
+}
 
 //----------------------------------------------------------------------------------------------------------------------------------------------
 
