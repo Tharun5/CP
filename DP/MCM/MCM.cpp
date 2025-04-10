@@ -10,8 +10,6 @@
 
 // Recursion
 
-#include <bits/stdc++.h> 
-
 int MCM(int i, int j, vector<int>& arr, vector<vector<int>> &dp){
     if(i==j) return 0;
 
@@ -25,6 +23,7 @@ int MCM(int i, int j, vector<int>& arr, vector<vector<int>> &dp){
 
     return dp[i][j] = ans;
 }
+
 
 int matrixMultiplication(vector<int> &arr, int N)
 {   
