@@ -1,9 +1,9 @@
-## Range Sum Queries
+# Range Sum Queries
 Problem link: https://www.geeksforgeeks.org/problems/sum-of-query-ii5310/0 
 
+<br>
 
-
-```
+``` cadence
 class Solution {
   public:
   
