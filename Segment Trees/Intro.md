@@ -1,4 +1,12 @@
-# Range Sum Queries
+# Segment Trees
+
+A segment tree is a tree-based data structure used to efficiently perform range queries and updates on an array. Each node in the segment tree represents an interval or segment of the original array.
+
+**Variations:**<br>
+Segement tree can be used for various operations like sum, max, min, xor... which follows associative property.<br>
+(A+B)+C = A+(B+C)
+
+## Range Sum Queries
 Problem link: https://www.geeksforgeeks.org/problems/sum-of-query-ii5310/0 
 
 <br>
