@@ -3,7 +3,7 @@ Lazy propagation is an optimization technique used with segment trees to efficie
 
 **Lazy Array:**<br>
 An additional array, often called a **"lazy array" or "lazy tree,"** is maintained alongside the segment tree. This array stores information about pending updates that have not yet been propagated down to the child nodes. Initially, all values in the lazy array are typically set to a "no-op" value (e.g., zero for sum updates).
-<br>
+<br><br>
 Update Range Sum
 ``` cadence
 void updateRange(int i, int l, int r, int start, int end, int val, vector<int> &lazy, vector<int> &segT){
@@ -38,6 +38,7 @@ void updateRange(int i, int l, int r, int start, int end, int val, vector<int> &
         updateRange(2*i+2, mid+1, r, start, end, val, lazy, segT);
         segT[i] = segT[2*i+1] + segT[2*i+2];
     }
+
 
  int query(int i, int l, int r, int st, int end){
         if(r<st || end<l) return 0;
