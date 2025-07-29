@@ -6,6 +6,8 @@ A segment tree is a tree-based data structure used to efficiently perform range 
 Segement tree can be used for various operations like sum, max, min, xor... which follows associative property.<br>
 (A+B)+C = A+(B+C)
 
+**Refer:** https://www.hackerearth.com/practice/notes/segment-tree-and-lazy-propagation/ 
+
 ## Range Sum Queries
 Problem link: https://www.geeksforgeeks.org/problems/sum-of-query-ii5310/0 
 
