@@ -61,3 +61,26 @@ class Solution {
 };
 
 ```
+
+
+## Point Update value at given index
+Problem link: https://leetcode.com/problems/range-sum-query-mutable/description/
+
+``` cadence
+  void updateSegT(int i, int l, int r, int index, int val){
+        if(l==index && r==index){
+            segT[i] = val;
+            return;
+        }
+
+        // Out of current range
+        if(index<l || index >r) return;
+
+        int mid = (l+r)/2;
+        updateSegT(2*i+1, l, mid, index, val);
+        updateSegT(2*i+2, mid+1, r, index, val);
+        segT[i] = segT[2*i+1] + segT[2*i+2];
+    }
+
+```
+
