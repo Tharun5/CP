@@ -23,7 +23,8 @@ The modular inverse of a modulo M is a number x such that:<br>
 Existence Rule
 	-	The inverse of a (mod M) exists only if:<br>
 gcd(a, M) = 1 &emsp;
-i.e., a and M are coprime.
+
+i.e., a and M are co-prime or relatively prime.
 
 ⸻
 
