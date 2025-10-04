@@ -131,30 +131,25 @@ For each index `i`:
 ### 💻 Code (C++)
 
 ```cpp
-vector<int> slidingWindowMin_Deque(vector<int>& arr, int k) {
-    deque<int> dq;
-    vector<int> res;
-    int n = arr.size();
+// Deque for Max element in Window
+struct mono_deque{
+        deque<int> dq;
 
-    for (int i = 0; i < n; ++i) {
-        // 1️⃣ Remove out-of-window elements
-        if (!dq.empty() && dq.front() <= i - k)
-            dq.pop_front();
+        void insert(int x){
+            while(!dq.empty() && dq.back()<x){
+                dq.pop_back();
+            }
+            dq.push_back(x);
+        }
+        void remove(int x){
+            if(dq.front() == x)
+                dq.pop_front();
+        }
+        int getMax(){
+            return dq.front();
+        }
+    };
 
-        // 2️⃣ Remove elements from back that are greater than current
-        while (!dq.empty() && arr[dq.back()] >= arr[i])
-            dq.pop_back();
-
-        // 3️⃣ Add current element index
-        dq.push_back(i);
-
-        // 4️⃣ Record minimum for current window
-        if (i >= k - 1)
-            res.push_back(arr[dq.front()]);
-    }
-
-    return res;
-}
 ```
 
 ---
