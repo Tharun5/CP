@@ -11,7 +11,7 @@ public:
                 nn-=1;
             }else{
                 x=x*x;
-                nn/=2;
+                nn/=2;gh
             }
         }
         
