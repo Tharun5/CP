@@ -263,6 +263,17 @@ void solve(){
     if(ans.size()!=n)cout<<"Cant Perfom Topological Sort";
     else for(auto x:ans)cout<<x<<" ";
 }
+
+Problems:
+1. Find lexicographical topological order.
+   - Here we can set or priority queue(with -ve values, minHeap) instead of queue.
+	
+2. Find the length longest path in DAG
+   - Form the graph of topological order if not present.
+   - Use BFS (Khans Algo) with inorder 0 nodes, and perform the topo sort algo.
+   - Now the longest path length is the levels in the queue. we can make len++ inside each level of queue traversal.
+   Leetcode: https://leetcode.com/problems/longest-increasing-path-in-a-matrix?envType=problem-list-v2&envId=topological-sort
+
 //----------------------------------------------------------------------------------
 
 
