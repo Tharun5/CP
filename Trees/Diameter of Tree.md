@@ -54,3 +54,10 @@ void solve(){
     cout<<dis[maxi2];
 }
 ```
+
+
+
+### Center of Tree
+- Center is the node which is mid of diameter.
+- If the diameter len is odd, then there is 1 center else we have 2.
+- From Center we can get the no of diameters exist in tree, by two cases based on 1 or 2 centers, calculating left&right side nodes.
