@@ -1,6 +1,8 @@
 //Refer:https://unacademy.com/class/graph-theory-lecture-2/4GHKRNKV
 // Time: O(mlogn) m-edges, logn from set (BFS takes O(n+m) so dijkstras takes O(nlogn+mlogn) as edges > no. of nodes we take as mlogn)
 
+
+// Using Set
 vector<pair<int,int>> grp[10001];
 int dist[10001];
 const int INF = 1e9;
@@ -39,6 +41,51 @@ void solve(){
 
     for(int i=1;i<=n;i++)
         cout<<dist[i]<<" ";
+}
+
+
+
+// Using Priority Queue
+
+void solve(){
+    int n, m;
+    cin>>n>>m;
+
+    g.resize(n+1);
+    dis.resize(n+1, 1e18);
+
+    for(int i=0;i<m;i++){
+        int a,b,c;
+        cin>>a>>b>>c;
+        g[a].push_back({b, c});
+    }
+
+    priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> pq;
+    pq.push({0, 1});
+    dis[1] = 0;
+
+    while(!pq.empty()){
+        int cur = pq.top().second;
+        int curwt = pq.top().first;
+        pq.pop();
+
+        if(curwt > dis[cur]) continue;
+
+        for(auto ch: g[cur]){
+            int edg = ch.first;
+            long long edwt = ch.second;
+
+            if(dis[edg] > dis[cur] + edwt){
+                dis[edg] = dis[cur] + edwt;
+                pq.push({dis[edg], edg});
+            }
+        }
+    }
+
+    for(int i=1;i<=n;i++){
+        cout<<dis[i]<<" ";
+    }
+
 }
 
 
