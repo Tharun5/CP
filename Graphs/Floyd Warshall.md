@@ -106,6 +106,42 @@ vector<vector<int>> floyd_warshall(int n, vector<vector<int>>& edges) {
 }
 ```
 
+### Print i->j Shortest Path
+If you want to trace the shortest path for every i->j, Use parent 2d array to save the last node we came from.
+i ... x ... y ... ... [node] -> j
+
+This last node before j, we came from helps us to track the path.
+Lets save this for every i->j.
+
+```cpp
+
+int par[101][101];
+
+for(int i=0;i<n;i++){
+  for(int j=0;j<n;j++){
+    par[i][j] = i;
+  }
+}
+
+ // Step 2: Floyd–Warshall DP
+    for (int k = 0; k < n; k++) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (dist[i][j] > dist[i][k] + dist[k][j]){
+                    dist[i][j] = dist[i][k] + dist[k][j];
+                    par[i][j] = par[k][j];
+                }
+                    
+            }
+        }
+    }
+
+void printPath(i, j){
+    if(i!=j) printPath(i, par[i][j]);
+    cout<<j<<" ";
+}
+
+```
 ---
 
 # ⏱️ Time & Space Complexity
