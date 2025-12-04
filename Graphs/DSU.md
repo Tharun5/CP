@@ -70,3 +70,9 @@ class DisjointSet{
     };
 ```
 
+<br>
+
+## Time Complexity:
+- For Find, Path compression O(n) -> O(logn)
+- For Union ->  O(α(N)) which is Inverse Ackermann's Function
+- Which is almost logn or constant.
