@@ -34,7 +34,8 @@ class DisjointSet{
                 
                 return parent[u]=find(parent[u]);
             }
-            
+
+            // Rank here represents - Height of tree, Graph
             void unionByRank(int u, int v){
                 int parent_u = find(u);
                 int parent_v = find(v);
