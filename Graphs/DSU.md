@@ -76,3 +76,11 @@ class DisjointSet{
 - For Find, Path compression O(n) -> O(logn)
 - For Union ->  O(α(N)) which is Inverse Ackermann's Function
 - Which is almost logn or constant.
+
+<br>
+
+## Problems:
+1. Sum of Minimum Weight of Paths Between All Pairs in a Graph
+   - Edge Contribution Technique using DSU:  https://codeforces.com/blog/entry/131735
+
+
