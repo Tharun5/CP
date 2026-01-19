@@ -356,6 +356,8 @@ Then prefix-summing in sorted time order gives the active count at each segment.
 ### Day window scheduling
 - LC 1353 Max Events Attended (day sweep + min-end heap)
 
+### Further standard Problems
+ - https://github.com/Chanda-Abdul/Several-Coding-Patterns-for-Solving-Data-Structures-and-Algorithms-Problems-during-Interviews/blob/main/%E2%9C%85%20%20Pattern%2004%20:%20Merge%20Intervals.md
 ---
 
 ## 6) Common Pitfalls Checklist
