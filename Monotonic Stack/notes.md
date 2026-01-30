@@ -246,4 +246,8 @@ They are about dominance, finality, and deferred decisions.**
 
 If you understand that, you can solve any variant.
 
+Refer:
+https://dilipkumar.medium.com/monotonic-stack-fdd3e3a5b251
+https://leetcode.com/discuss/post/3773642/mastering-monotonic-stack-unlocking-effi-6h94/
+
 ---
