@@ -168,5 +168,6 @@ bool findPattern(const string& s, const string& p){
 
 ## Refer
 
-> [KMP Tushar Youtube](https://www.youtube.com/watch?v=GTJr8OvyEVQ)
+- [KMP Tushar Youtube](https://www.youtube.com/watch?v=GTJr8OvyEVQ)
+- Problem: [LC 28](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)
 
