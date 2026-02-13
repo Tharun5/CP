@@ -357,7 +357,7 @@ Then prefix-summing in sorted time order gives the active count at each segment.
 - LC 1353 Max Events Attended (day sweep + min-end heap)
 
 ### Sweep Line
-- LC 218 The Skyline Problem
+- LC 218 [The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/description/)
 
 ### Further standard Problems
 - https://dilipkumar.medium.com/interval-coding-pattern-068c36197cf5
